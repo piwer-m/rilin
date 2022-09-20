@@ -4,8 +4,8 @@
 #include <fstream>
 
 namespace ril {
-	std::vector<std::string> split(std::string s, std::string del) {
-		std::vector<std::string> ret = {};
+    std::vector<std::string> split(std::string s, std::string del) {
+	std::vector<std::string> ret = {};
 
         auto start = 0U;
         auto end = s.find(del);
@@ -20,7 +20,7 @@ namespace ril {
         ret.push_back(s.substr(start, end));
 
         return ret;
-	}
+    }
 
     bool startwith(std::string s, std::string sw) {
         if (s.find(sw, 0) == 0) {
